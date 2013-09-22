@@ -12,3 +12,6 @@ sudo /etc/init.d/apache2 restart
 cd ~
 curl -s http://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
+
+# misc.
+sudo apt-get -y install git
