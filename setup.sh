@@ -3,6 +3,7 @@
 sudo apt-get -y install apache2
 sudo apt-get -y install php5
 sudo apt-get -y install libapache2-mod-php5
+sudo apt-get -y install php5-curl
 
 # install mysql
 sudo apt-get -y install mysql-server
