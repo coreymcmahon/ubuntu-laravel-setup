@@ -8,6 +8,7 @@ usage
 ====================
 
 ```
+$ wget https://raw.github.com/coreymcmahon/ubuntu-laravel-setup/master/setup.sh
 $ chmod 755 setup.sh
 $ ./setup.sh
 ```
