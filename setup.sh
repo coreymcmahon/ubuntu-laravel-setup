@@ -1,4 +1,6 @@
 #!/bin/bash
+sudo apt-get update
+
 # install apache and php5
 sudo apt-get -y install apache2
 sudo apt-get -y install php5
