@@ -13,7 +13,10 @@ sudo apt-get -y install libapache-mod-auth-mysql
 sudo apt-get -y install php5-mysql
 
 # install mcrypt PHP extension
-sudo apt-get -y install php5-mcrypt
+sudo apt-get -y install mcrypt php5-mcrypt
+sudo ln -s /etc/php5/conf.d/mcrypt.ini /etc/php5/mods-available
+sudo php5enmod mcrypt
+sudo service apache2 restart
 
 # enable mod_rewrite
 sudo a2enmod rewrite
