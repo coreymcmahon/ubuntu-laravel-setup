@@ -6,6 +6,7 @@ sudo apt-get -y install apache2
 sudo apt-get -y install php5
 sudo apt-get -y install libapache2-mod-php5
 sudo apt-get -y install php5-curl
+sudo apt-get -y install php5-json
 
 # install mysql
 sudo apt-get -y install mysql-server
@@ -31,3 +32,8 @@ sudo mv composer.phar /usr/local/bin/composer
 
 # misc.
 sudo apt-get -y install git
+
+# ssl
+sudo a2enmod ssl
+sudo a2ensite default-ssl
+sudo /etc/init.d/apache2 restart
