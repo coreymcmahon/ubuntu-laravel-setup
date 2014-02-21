@@ -37,3 +37,9 @@ sudo apt-get -y install git
 sudo a2enmod ssl
 sudo a2ensite default-ssl
 sudo /etc/init.d/apache2 restart
+
+# add swap
+sudo dd if=/dev/zero of=/swapfile bs=1M count=1024
+sudo echo "/swapfile swap swap defaults 0 0" >> /etc/fstab
+sudo mkswap /swapfile
+sudo swapon /swapfile
